@@ -1,4 +1,4 @@
-FROM tomcat:7
+FROM tomcat:9
 MAINTAINER Oliver Lade <oliver.lade@unimelb.edu.au>
 # See https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu
 
