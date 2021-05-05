@@ -10,6 +10,8 @@ A [Docker][docker] image for [BIMserver][bimserver] on [Tomcat][tomcat].
 To run BIMserver in a container on your server, Docker needs to be [installed][docker-install]. On
 Debian/Ubuntu Linux, this is as simple as `sudo apt-get install docker.io`.
 
+docker build --rm -t urbanetic/bimserver:latest .
+
 With Docker installed, running BIMserver is as simple as
 `sudo docker run -p 8080:8080 urbanetic/bimserver`. This will run BIMserver on port 8080.
 

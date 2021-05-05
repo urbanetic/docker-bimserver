@@ -1,4 +1,4 @@
-FROM tomcat:9
+FROM tomcat:7
 MAINTAINER Oliver Lade <oliver.lade@unimelb.edu.au>
 # See https://github.com/opensourceBIM/BIMserver/wiki/Install-on-Ubuntu
 
@@ -7,7 +7,7 @@ ENV CATALINA_HOME /usr/local/tomcat
 ENV BIMSERVER_APP $TOMCAT_HOME/webapps/bimserver
 
 # Increase the heap size
-ENV CATALINA_OPTS "-d64 -Xms1024M -Xmx4G -XX:+UseCompressedOops"
+# ENV CATALINA_OPTS "-d64 -Xms1024M -Xmx4G -XX:+UseCompressedOops"
 
 # Delete the example Tomcat app to speed up deployment.
 RUN rm -rf $TOMCAT_HOME/webapps/examples
